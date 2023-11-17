@@ -1,5 +1,6 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
+import { Report } from 'notiflix/build/notiflix-report-aio';
 
 const options = {
     enableTime: true,
@@ -12,6 +13,8 @@ const options = {
   };
 
   flatpickr("#datetime-picker", options);
+
+
 
   
 

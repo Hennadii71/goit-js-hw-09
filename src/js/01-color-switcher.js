@@ -13,7 +13,7 @@ const refs = {
 refs.buttonStart.addEventListener('click', onChangeColorBody);
 refs.buttonStop.addEventListener('click', ofChangeColorBody);
 
-let timerId;
+let timerId = null;
 
 function onChangeColorBody() {
   refs.buttonStart.disabled = true;
