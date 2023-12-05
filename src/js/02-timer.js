@@ -14,10 +14,32 @@ const options = {
 
 flatpickr('#datetime-picker', options);
 
+
 const refs = {
-  buttonStart: document.querySelector('[data-start]'),
+  buttonStart: document.querySelector('button[data-start]'),
   counterDays: document.querySelector('[data-days'),
   counterHours: document.querySelector('[data-hours]'),
   counterMinutes: document.querySelector('[data-minutes]'),
   counterSeconds: document.querySelector('[data-seconds]'),
 };
+
+refs.buttonStart.disabled = true;
+refs.buttonStart.addEventListener('click', timerStart);
+
+function timerStart() {}
+
+Report.success(
+  'OK',
+  'Everything is fine',
+  'click to continue',
+  {
+  width: '200px',
+  svgSize: '24px',
+  messageMaxLength: 1923,
+  plainText: false,
+});
+
+
+
+
+
